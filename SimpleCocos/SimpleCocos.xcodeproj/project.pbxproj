@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0444F80B1E643430009EDCA0 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444F80A1E643430009EDCA0 /* AppController.m */; };
+		0444F80E1E64349E009EDCA0 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0444F80D1E64349E009EDCA0 /* RootViewController.m */; };
 		04A031001E6034A3000B12FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A030FF1E6034A3000B12FA /* main.m */; };
 		04A031031E6034A3000B12FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A031021E6034A3000B12FA /* AppDelegate.m */; };
 		04A031061E6034A3000B12FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A031051E6034A3000B12FA /* ViewController.m */; };
@@ -16,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0444F8081E6423CF009EDCA0 /* CCPlatformDefine-ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCPlatformDefine-ios.h"; sourceTree = "<group>"; };
+		0444F8091E643430009EDCA0 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		0444F80A1E643430009EDCA0 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		0444F80C1E64349E009EDCA0 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		0444F80D1E64349E009EDCA0 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		04A030FB1E6034A3000B12FA /* SimpleCocos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCocos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A030FF1E6034A3000B12FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04A031011E6034A3000B12FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +33,7 @@
 		04A0310A1E6034A3000B12FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A0310D1E6034A3000B12FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A0310F1E6034A3000B12FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A031161E603C1C000B12FA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0444F8051E642322009EDCA0 /* cocos2d */ = {
+			isa = PBXGroup;
+			children = (
+				0444F8061E64234D009EDCA0 /* platform */,
+			);
+			path = cocos2d;
+			sourceTree = "<group>";
+		};
+		0444F8061E64234D009EDCA0 /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				0444F8071E64234D009EDCA0 /* ios */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		0444F8071E64234D009EDCA0 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				0444F8081E6423CF009EDCA0 /* CCPlatformDefine-ios.h */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
 		04A030F21E6034A3000B12FA = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +97,7 @@
 				04A031071E6034A3000B12FA /* Main.storyboard */,
 				04A0310A1E6034A3000B12FA /* Assets.xcassets */,
 				04A0310C1E6034A3000B12FA /* LaunchScreen.storyboard */,
+				0444F8051E642322009EDCA0 /* cocos2d */,
 				04A0310F1E6034A3000B12FA /* Info.plist */,
 				04A030FE1E6034A3000B12FA /* Supporting Files */,
 			);
@@ -74,6 +107,11 @@
 		04A030FE1E6034A3000B12FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04A031161E603C1C000B12FA /* PrefixHeader.pch */,
+				0444F8091E643430009EDCA0 /* AppController.h */,
+				0444F80A1E643430009EDCA0 /* AppController.m */,
+				0444F80C1E64349E009EDCA0 /* RootViewController.h */,
+				0444F80D1E64349E009EDCA0 /* RootViewController.m */,
 				04A030FF1E6034A3000B12FA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -153,6 +191,8 @@
 				04A031061E6034A3000B12FA /* ViewController.m in Sources */,
 				04A031031E6034A3000B12FA /* AppDelegate.m in Sources */,
 				04A031001E6034A3000B12FA /* main.m in Sources */,
+				0444F80B1E643430009EDCA0 /* AppController.m in Sources */,
+				0444F80E1E64349E009EDCA0 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SimpleCocos/PrefixHeader.pch";
 				INFOPLIST_FILE = SimpleCocos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jk.SimpleCocos;
@@ -283,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SimpleCocos/PrefixHeader.pch";
 				INFOPLIST_FILE = SimpleCocos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jk.SimpleCocos;
@@ -309,6 +351,7 @@
 				04A031141E6034A3000B12FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
